@@ -1,0 +1,719 @@
+<section id="home" class="w-full h-screen overflow-hidden m-0 p-0">
+
+    <div class="relative w-full h-full">
+        <video class="absolute top-0 left-0 w-full h-full object-cover hue-rotate-90" autoplay playsinline loop>
+            <source src="/assets/videos/webVid.mp4" type="video/mp4">
+        </video>
+        <canvas class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 z-10 bg-transparent" #roleCanvas
+            width="1000" height="300">
+        </canvas>
+
+        <a href="#about" class="absolute top-2/3 left-1/6 px-5 py-3
+        rounded-[8px] bg-blue-500 text-white z-30
+        shadow shadow-white font-semibold
+        hover:shadow-lg">About Me</a>
+
+        <div class="flex gap-3 absolute top-3/4 left-1/6 pt-5">
+            <img class="size-[30px] hover:border-2 rounded-full border-white" [src]="'/assets/icons/social.png'" alt="">
+            <img class="size-[30px] hover:border-2 rounded-full border-white" [src]="'/assets/icons/github.png'" alt="">
+            <img class="bg-blue-600 size-[30px] hover:border-2 rounded-full border-white "
+                [src]="'/assets/icons/instagram.png'" alt="">
+        </div>
+
+
+    </div>
+</section>
+
+<section id="about">
+    <div class="bg-gray-200 w-full py-10">
+
+        <div class="flex items-center justify-center gap-4 py-10">
+            <img class="size-[48px] " [src]="'/assets/icons/about_me.png'">
+            <h1 class="font-semibold text-5xl">About me</h1>
+        </div>
+
+
+        <div class="grid lg:grid-cols-2 grid-cols-1 w-full ">
+            <div class="bg-gray-200 flex justify-center items-center pb-5">
+                <img class="rounded-full p-2 m-2 w-92 " src="/assets/images/skarimi.jpg" alt="">
+            </div>
+
+            <div class="bg-gray-200 mr-20 w-full px-10
+            
+            ">
+                <h1 class="
+                text-2xl font-bold
+            animate-fade-down animate-once animate-duration-1000 animate-delay-200 animate-ease-in-out animate-fill-both
+                text-center lg:text-start
+                ">Mohd Shahbaz Ahmed</h1>
+                <h1 class="text-[18px] font-semibold text-center lg:text-start">
+                    Full Stack Developer
+                </h1>
+                
+                <p class="text-[18px]">
+                        I am a Full-Stack Developer based in Delhi, India.
+                        I am passionate about enhancing my coding skills and building dynamic websites and web applications.
+                        I
+                        work primarily with Java, Spring Boot, and Angular. Currently working at Trekowave, I enjoy crafting
+                        end-to-end solutions and developing innovative full-stack projects.
+                    </p>
+                <br>
+                <h1><span class="text-blue-500">Email : </span>shahbazkarimi123&#x40;gmail.com</h1>
+                <h1 class="pt-5"><span class="text-blue-500">Place : </span>Delhi, India</h1>
+                <br>
+                <div class="flex justify-end ">
+
+                    <button class="shadow-slate-800 shadow-lg rounded-2xl p-3 bg-blue-500 text-2xl hover:bg-blue-600"><a
+                            href="https://drive.google.com/file/d/1lQG0p30DZVHCC3AZkNPq7kt8IvWiS9s9/view?usp=sharing">Resume
+                            &#x276F;</a></button>
+                </div>
+
+
+            </div>
+
+        </div>
+    </div>
+</section>
+
+
+<section id="skills">
+    <div class="bg-blue-600 pb-10">
+        <div class="flex items-center justify-center py-10 gap-5">
+            <img class="size-[48px]" [src]="'/assets/icons/skills.png'">
+
+            <h1 class="
+            text-4xl font-bold text-red-800
+            ">Skills & <span class="text-yellow-500">Abilities</span></h1>
+        </div>
+
+        <div class="bg-blue-800 grid md:grid-cols-2 ms:grid-cols-1 lg:grid-cols-4
+        lg:ml-20 lg:mr-20 mx-8 rounded-2xl gap-10 p-10 ">
+
+            <div class="bg-gray-700 
+            border-none rounded-2xl 
+            transition-transform duration-700 ease-in-out
+            shadow-lg shadow-green-950
+            hover:scale-110 active:scale-110">
+                <img class="mx-auto size-44" [src]="['/assets/icons/java.png']">
+                <h1 class="text-white pb-10 text-3xl font-semibold font-sans text-center">Java</h1>
+
+            </div>
+
+
+            <div class="bg-gray-700 
+            border-none rounded-2xl
+            transition-transform duration-700 ease-in-out
+            shadow-lg shadow-green-950
+            hover:scale-110 active:scale-110">
+                <img class="mx-auto size-44" [src]="['/assets/icons/spring_boot.png']">
+                <h1 class="text-white pb-10 text-3xl font-semibold font-sans text-center">Spring Boot</h1>
+            </div>
+
+            <div class="bg-gray-700 
+            border-none rounded-2xl
+            transition-transform duration-700 ease-in-out
+            shadow-lg shadow-green-950
+            hover:scale-110 active:scale-110">
+                <img class="mx-auto size-44" [src]="['/assets/icons/angular.png']">
+                <h1 class="text-white pb-10 text-3xl font-semibold font-sans text-center">Angular</h1>
+
+            </div>
+            <div class="bg-gray-700 
+            border-none rounded-2xl
+            transition-transform duration-700 ease-in-out
+            shadow-lg shadow-green-950
+            hover:scale-110 active:scale-110">
+                <img class="mx-auto size-44" [src]="['/assets/icons/tailwindcss.png']">
+                <h1 class="text-white pb-10 text-3xl font-semibold font-sans text-center">Tailwindcss</h1>
+
+            </div>
+            <div class="bg-gray-700 
+            border-none rounded-2xl
+            transition-transform duration-700 ease-in-out
+            shadow-lg shadow-green-950
+            hover:scale-110 active:scale-110">
+                <img class="mx-auto size-44" [src]="['/assets/icons/html5.png']">
+                <h1 class="text-white pb-10 text-3xl font-semibold font-sans text-center">HTML5</h1>
+
+            </div>
+            <div class="bg-gray-700 
+            border-none rounded-2xl
+            transition-transform duration-700 ease-in-out
+            shadow-lg shadow-green-950
+            hover:scale-110 active:scale-110">
+                <img class="mx-auto size-44" [src]="['/assets/icons/css3.png']">
+                <h1 class="text-white pb-10 text-3xl font-semibold font-sans text-center">CSS3</h1>
+
+            </div>
+            <div class="bg-gray-700 
+            border-none rounded-2xl
+            transition-transform duration-700 ease-in-out
+            shadow-lg shadow-green-950
+            hover:scale-110 active:scale-110">
+                <img class="mx-auto size-44 p-5" [src]="['/assets/icons/mysql.png']">
+                <h1 class="text-white pb-10 text-3xl font-semibold font-sans text-center">MySQL</h1>
+
+            </div>
+            <div class="bg-gray-700 
+            border-none rounded-2xl
+            transition-transform duration-700 ease-in-out
+            shadow-lg shadow-green-950
+            hover:scale-110 active:scale-110">
+                <img class="mx-auto size-44" [src]="['/assets/icons/docker.png']">
+                <h1 class="text-white pb-10 text-3xl font-semibold font-sans text-center">Docker</h1>
+
+            </div>
+            <div class="bg-gray-700 
+            border-none rounded-2xl
+            transition-transform duration-700 ease-in-out
+            shadow-lg shadow-green-950
+            hover:scale-110 active:scale-110">
+                <img class="mx-auto size-44" [src]="['/assets/icons/kubernetes.png']">
+                <h1 class="text-white pb-10 text-3xl font-semibold font-sans text-center">Kubernetes</h1>
+
+            </div>
+            <div class="bg-gray-700 
+            border-none rounded-2xl
+            transition-transform duration-700 ease-in-out
+            shadow-lg shadow-green-950
+            hover:scale-110 active:scale-110">
+                <img class="mx-auto size-44" [src]="['/assets/icons/flutter.png']">
+                <h1 class="text-white pb-10 text-3xl font-semibold font-sans text-center">Flutter</h1>
+
+            </div>
+
+            <div class="bg-gray-700 
+            border-none rounded-2xl
+            transition-transform duration-700 ease-in-out
+            shadow-lg shadow-green-950
+            hover:scale-110 active:scale-110">
+                <img class="mx-auto size-44" [src]="['/assets/icons/dsa.png']">
+                <h1 class="text-white pb-10 text-3xl font-semibold font-sans text-center">DSA</h1>
+
+            </div>
+            <div class="bg-gray-700 
+            border-none rounded-2xl
+            transition-transform duration-700 ease-in-out
+            shadow-lg shadow-green-950
+            hover:scale-110 active:scale-110">
+                <img class="mx-auto size-44" [src]="['/assets/icons/github.png']">
+                <h1 class="text-white pb-10 text-3xl font-semibold font-sans text-center">GitHub</h1>
+
+            </div>
+
+        </div>
+
+    </div>
+</section>
+
+
+<section id="education">
+
+    <div class="bg-green-200">
+        <div class="flex items-center justify-center gap-5 pt-10">
+            <img class="size-[48px]" [src]="'/assets/icons/education.png'">
+            <h1 class="text-3xl font-semibold ">My Education</h1>
+        </div>
+        
+        <h1 class="text-center pt-2 text-[16px] font-medium px-3">The goal of education is not to learn what to think, but
+            how to think.</h1>
+
+        <div class="flex flex-col items-center pt-10 gap-4">
+            <div class="bg-yellow-50
+            w-3/4  gap-10
+            lg:flex items-start justify-start
+            shadow-lg shadow-green-950
+            hover:shadow-2xl
+            border-none rounded-2xl
+            ">
+            <div class="flex justify-center">
+
+                <img class="lg:size-48 border-none lg:rounded-l-2xl
+                rounded-t-2xl" [src]="'/assets/images/iec_university.jpg'" alt="">
+             </div>
+                <div class="flex flex-col gap-5 mt-8 mb-5">
+                    <h1 class="text-blue-700 text-center lg:text:start text-[25px] font-bold">Bachelor of Computer Applications</h1>
+                    <h1 class="text-[15px] text-center lg:text-start"> Baddi, Himachal Pradesh-174103 </h1>
+                    <h1 class="text-green-700 font-semibold text-[20px] text-center lg:text-start">2015-2018 | Completed</h1>
+                </div>
+            </div>
+
+            <div class="bg-yellow-50
+            w-3/4 gap-10
+            lg:flex items-start justify-start
+            shadow-lg shadow-green-950
+            hover:shadow-2xl
+            border-none rounded-2xl
+            ">
+            <div class="flex justify-center">
+
+                <img class="lg:size-48 border-none lg:rounded-l-2xl
+                rounded-t-2xl lg:rounded-tr-none" [src]="'/assets/images/jetking.jpg'" alt="">
+            </div>
+                <div class="flex flex-col gap-5 mt-8 mb-3">
+                    <h1 class="text-blue-700 text-center lg:text-start text-[25px] font-bold">Hardware & Networking Engineer</h1>
+                    <h1 class="text-[15px] text-center lg:text-start"> Karol Bagh, New Delhi-110005 </h1>
+                    <h1 class="text-green-700 font-semibold text-[20px]
+                    text-center lg:text-start">2014-2015 | Completed</h1>
+                </div>
+            </div>
+
+            <div class="bg-yellow-50
+            w-3/4 gap-10 
+            lg:flex items-start justify-start
+            shadow-lg shadow-green-950
+            hover:shadow-2xl
+            border-none rounded-2xl
+            ">
+            <div class="">
+
+                <img class="lg:size-48 border-none rounded-t-2xl lg:rounded-l-2xl lg:rounded-tr-none" [src]="'/assets/images/anglo.jpg'" alt="">
+            </div>
+                <div class="flex flex-col gap-5 mt-8 mb-3">
+                    <h1 class="text-blue-700 text-[25px] text-center lg:text-start font-bold">
+                        12th CBSE (Central Board of Secondary Education)
+                    </h1>
+                    <h1 class="text-[15px] text-center lg:text-start ">Anglo Arabic Sr. Sec School, Delhi-110006</h1>
+                    <h1 class="text-green-700 font-semibold text-[20px] text-center lg:text-start">2013-2014 | Completed</h1>
+                </div>
+            </div>
+
+
+            <div class="bg-yellow-50
+                w-3/4 gap-10 mb-10
+                border-none rounded-2xl
+                lg:flex items-start justify-start
+                shadow-lg shadow-green-950
+                hover:shadow-2xl
+                ">
+                <div>
+
+                    <img class="lg:size-48 border-none lg:rounded-l-2xl
+                    rounded-t-2xl lg:rounded-tr-none" [src]="'/assets/images/anglo.jpg'" alt="">
+                </div>
+                <div class="flex flex-col gap-5 mt-8 mb-3">
+                    <h1 class="text-blue-700 text-[25px] font-bold text-center lg:text-start ">10th CBSE (Central Board of Secondary Education)
+                    </h1>
+                    <h1 class="text-[15px] text-center lg:text-start">Anglo Arabic Sr. Sec School, Delhi-110006</h1>
+                    <h1 class="text-green-700 font-semibold text-[20px] text-center lg:text-start">2011-2012 | Completed</h1>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+<section id="work">
+    <div class="bg-blue-950">
+        <div class="flex justify-center items-center gap-10">
+            <img class="size-[48px]" [src]="'/assets/icons/laptop.png'">
+            <h1 class="text-center py-10 text-white
+            font-bold text-5xl">Project <span class="text-yellow-500">Made</span></h1>
+        </div>
+        <div class="container mx-auto px-10 pb-10">
+
+            <div class="grid grid-cols-1 lg:grid-cols-3 gap-10 pb-10">
+
+                <div class="bg-amber-50
+                    h-72 border-none rounded-2xl
+                    relative overflow-hidden
+                    " (click)="toggleOverlay(0)">
+                    <div class="flex items-center justify-center h-70">
+
+                        <img class="max-w-full h-auto" [src]="'/assets/logos/trekowave.png'">
+                    </div>
+
+                    <div class="bg-blue-400 absolute bottom-10 left-0
+                        w-full h-72  translate-y-full
+                        
+                        transition-transform duration-500 ease-in-out
+                        
+                        " [class.translate-y-full]="activeIndex !==0"
+                        [class.translate-y-25]="activeIndex === 0">
+                        <h1 class="bg-yellow-500 text-center font-bold text-2xl pt-1 pb-1">Trekowave</h1>
+                        <div class="flex justify-center pt-5">
+
+                            <button class="bg-gray-800
+                            px-7 py-3
+                            text-white font-semibold
+                            border-none rounded-[8px]
+                            shadow-md shadow-green-950
+                            hover:bg-blue-800
+                            "><a href="https://trekowave.in/">Visit</a></button>
+                        </div>
+                    </div>
+
+                </div>
+
+                <div class="bg-amber-50
+                    h-72 border-none rounded-2xl
+                    relative group overflow-hidden
+                    " (click)="toggleOverlay(1)">
+                    <div class="flex justify-center items-center h-72">
+                        <img class="max-w-full h-auto" [src]="'/assets/logos/followiT.png'" alt="">
+                    </div>
+
+                    <div class="bg-blue-400 absolute bottom-10 left-0
+                        w-full h-72  translate-y-full
+                        transition-transform duration-500 ease-in-out
+                        " [class.translate-y-full]="activeIndex !==1"
+                        [class.translate-y-25]="activeIndex ==1">
+                        <h1 class="bg-yellow-500 text-center font-bold text-2xl pt-1 pb-1">FollowiT</h1>
+                        <div class="flex flex-col justify-center items-center pt-3">
+                            <p class="text-center">Developed followiT website for Trekowave using Spring Boot (backend) and Angular (frontend) for internal use.</p>
+
+                            <button class="bg-gray-800
+                            px-7 py-3
+                            text-white font-semibold
+                            border-none rounded-[8px]
+                            shadow-md shadow-green-950
+                            hover:bg-blue-800
+                            "><a href="https://github.com/shahbazkarimi123/follow-it-trekowave">View Code</a></button>
+                        </div>
+                    </div>
+
+                </div>
+
+                <div class="bg-amber-50
+                    h-72 border-none rounded-2xl
+                    relative group overflow-hidden
+                    " (click)="toggleOverlay(2)">
+                    <div class="flex items-center justify-center h-70">
+
+                        <img class="max-w-full h-auto" [src]="'/assets/logos/trekowave.png'">
+                    </div>
+
+                    <div class="bg-blue-400 absolute bottom-10 left-0
+                        w-full h-72  translate-y-full
+                        
+                        transition-transform duration-500 ease-in-out
+                        " [class.translate-y-full]="activeIndex !==2"
+                        [class.translate-y-25]="activeIndex ===2">
+                        <h1 class="bg-yellow-500 text-center font-bold text-2xl pt-1 pb-1">Xyz EV Fleet</h1>
+                        <div class="flex flex-col justify-center items-center pt-3">
+                            <p>Developed XYZ app with map integration to track electric vehicles and renew their subscription plans.</p>
+
+                            <button class="bg-gray-800
+                            px-7 py-3
+                            text-white font-semibold
+                            border-none rounded-[8px]
+                            shadow-md shadow-green-950
+                            hover:bg-blue-800
+                            "><a href="https://github.com/shahbazkarimi123/trekowave-vt">View Code</a></button>
+                        </div>
+                    </div>
+
+                </div>
+
+                <div class="bg-amber-50
+                h-72 border-none rounded-2xl
+                relative group overflow-hidden
+                " (click)="toggleOverlay(3)">
+                <div class="flex items-center justify-center h-70">
+
+                    <img class="max-w-full h-auto" [src]="'/assets/logos/trekowave.png'">
+                </div>
+
+                <div class="bg-blue-400 absolute bottom-10 left-0
+                    w-full h-72  translate-y-full
+                    
+                    transition-transform duration-500 ease-in-out
+                    " [class.translate-y-full]="activeIndex !==3"
+                    [class.translate-y-25]="activeIndex ===3">
+                    <h1 class="bg-yellow-500 text-center font-bold text-2xl pt-1 pb-1">Ev2Go</h1>
+                    <div class="flex flex-col items-center justify-center pt-5">
+                        <p class="text-center">Created Ev2Go app at Trekowave for electric vehicle tracking and smooth online rent payment with better UI, like ETM Bike.</p>
+
+                        <button class="bg-gray-800
+                        px-7 py-3
+                        text-white font-semibold
+                        border-none rounded-[8px]
+                        shadow-md shadow-green-950
+                        hover:bg-blue-800
+                        "><a href="https://github.com/shahbazkarimi123/trekowave-ev2go">Visit Code</a></button>
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="bg-amber-50
+                    h-72 border-none rounded-2xl
+                    relative group overflow-hidden
+                    " (click)="toggleOverlay(4)">
+                    <div class="flex items-center justify-center h-70">
+
+                        <img class="max-w-full h-auto" [src]="'/assets/logos/trekowave.png'">
+                    </div>
+
+                    <div class="bg-blue-400 absolute bottom-10 left-0
+                        w-full h-72  translate-y-full
+                        
+                        transition-transform duration-500 ease-in-out
+                        " [class.translate-y-full]="activeIndex !==4"
+                        [class.translate-y-25]="activeIndex ===4">
+                        <h1 class="bg-yellow-500 text-center font-bold text-2xl pt-1 pb-1">Etm Bike</h1>
+                        <div class="flex flex-col items-center justify-center pt-3">
+                            <p class="text-center">Created ETM Bike app at Trekowave for EV tracking and seamless online rent payment</p>
+
+                            <button class="bg-gray-800
+                            px-7 py-3
+                            text-white font-semibold
+                            border-none rounded-[8px]
+                            shadow-md shadow-green-950
+                            hover:bg-blue-800
+                            "><a href="https://github.com/shahbazkarimi123/trekowave-etm-bike">View Code</a></button>
+                        </div>
+                    </div>
+
+                </div>
+
+
+                <div class="bg-amber-50
+                    h-72 border-none rounded-2xl
+                    relative group overflow-hidden
+                    " (click)="toggleOverlay(5)">
+                    <div class="flex items-center justify-center h-70">
+
+                        <img class="max-w-full h-auto" [src]="'/assets/logos/kcal.png'">
+                    </div>
+
+                    <div class="bg-blue-400 absolute bottom-10 left-0
+                        w-full h-72  translate-y-full
+                        transition-transform duration-500 ease-in-out
+                        " [class.translate-y-full]="activeIndex !==5"
+                        [class.translate-y-25]="activeIndex ===5">
+                        <h1 class="bg-yellow-500 text-center font-bold text-2xl pt-1 pb-1">Kcal</h1>
+                        <div class=" flex flex-col justify-center items-center pt-5">
+                        <p class="text-center">Published a Flutter app on Google Play for calculating fabric cost & total lot expenses.</p>
+
+
+                            <button class="bg-gray-800
+                            px-7 py-3 
+                            text-white font-semibold
+                            border-none rounded-[8px]
+                            shadow-md shadow-green-950
+                            hover:bg-blue-800
+                            "><a href="https://trekowave.in/">visit</a></button>
+                        </div>
+                    </div>
+
+                </div>
+
+            </div>
+            <div class="flex justify-center items-center">
+                <a class="text-white text-[18px] font-semibold bg-blue-600
+                    border-none rounded-sm px-8 py-4 hover:bg-blue-800 shadow-lg shadow-orange-300" href="https://github.com/shahbazkarimi123?tab=repositories">View All &#x279C;</a>
+                    
+            </div>
+        </div>
+
+    </div>
+</section>
+
+
+<section class="bg-gray-300 w-full" id="experience">
+    <div class="flex justify-center items-center py-8 gap-5">
+        <img class="size-[48px]" [src]="'/assets/icons/experiance.png'">
+        <h1 class="font-bold text-4xl">Experience</h1>
+    </div>
+    <div class="w-full  justify-center items-center gap-10 pb-10">
+        <div class="flex justify-center items-center">
+
+            <button class="bg-blue-600
+                
+                text-white
+                font-bold text-[20px]
+            shadow-lg shadow-slate-950
+    
+            border-none rounded-[8px]
+            px-5 py-5
+            animate-pulse animate-infinite animate-duration-2000 animate-ease-in-out animate-alternate-reverse
+            ">Work In Progress</button>
+        </div>
+        
+        <div
+            class="flex items-center justify-center
+            text-6xl text-red-800 
+        animate-fade-up  animate-infinite animate-duration-[6000ms] animate-ease-out animate-normal animate-fill-both">
+            <p class="font-bold">
+                &#x2191;
+            </p>
+        </div>
+        <div
+            class="flex justify-center items-center
+        text-red-900
+        text-center
+        animate-fade-up animate-infinite animate-duration-[6000ms] animate-ease-out animate-normal animate-fill-both">
+            <div>
+
+                <h1 class="text-[18px] font-bold">Full-Stack Developer</h1>
+                <h2 class="font-bold text-[15px]">Trekowave Pvt Ltd</h2>
+                <h3 class="font-semibold text-[14px]">July 2023 - july 2024</h3>
+            </div>
+        </div>
+        <div
+            class="text-6xl text-red-800 flex justify-center items-center
+        animate-fade-up animate-infinite animate-duration-[6000ms] animate-ease-out animate-normal animate-fill-both">
+        &#x2223;</div>
+        <!-- <div
+            class="text-6xl  text-red-800 flex justify-center items-center
+        animate-fade-up animate-infinite animate-duration-[6000ms] animate-ease-out animate-normal animate-fill-both">
+            &#x27A4;</div> -->
+        
+        <div class="flex items-center justify-center pt-10">
+
+            <button class="bg-blue-600
+            text-white
+            shadow-lg shadow-slate-950
+            font-bold text-[20px]
+            border-none rounded-full
+            size-[90px]
+            ">Start</button>
+        </div>
+
+    </div>
+
+
+</section>
+
+
+<section class="bg-green-200" id="contact">
+
+    <div class="flex justify-center items-center gap-5 py-10">
+        <img class="size-[48px]" [src]="'/assets/icons/contact.png'" alt="">
+        <h1 class="font-bold text-4xl">Get In Touch</h1>
+    </div>
+    <div class="flex items-center justify-center ">
+
+        <div class="bg-white lg:flex items-center justify-around  w-4/5 lg:p-10
+            mb-10
+            border-none rounded-3xl">
+            <div class="flex justify-center items-center">
+
+                <img class="size-1/2" [src]="'/assets/images/get_in_touch.jpg'" alt="">
+            </div>
+            <div class="flex items-center justify-center pb-5 w-full">
+
+                <form class="flex flex-col items-center justify-center gap-8 mx-auto lg:size-3/2"
+                    #myForm="ngForm" (ngSubmit)="onSubmit(myForm)">
+
+
+                    <input class="
+                    border-none border-gray-600 rounded-[8px]
+                    p-3 w-full
+                
+                    focus:outline-none focus:ring-0 focus:rign-blue-400
+                    focus:shadow-lg shadow-slate-800 shadow-xs
+                    hover:shadow-lg
+                    bg-gray-300
+                    " type="text" name="name" placeholder="name" [(ngModel)]="formData.name" required>
+
+
+
+                    <input class="
+                border-none border-gray-600 rounded-[8px]
+                p-3 w-full
+                focus:outline-none focus:ring-0 focus:rign-blue-400
+                focus:shadow-lg shadow-slate-800 shadow-xs
+                hover:shadow-lg
+                bg-gray-300
+                " type="text" name="email" placeholder="Enter email" [(ngModel)]="formData.email" required>
+
+
+                    <input class="
+                border-none border-gray-600 rounded-[8px]
+                p-3  w-full
+                focus:outline-none focus:ring-0 focus:rign-blue-400
+                focus:shadow-lg shadow-slate-800 shadow-xs
+                hover:shadow-lg
+                bg-gray-300
+                no-spinner
+                " type="number" name="phone" placeholder="Phone" [(ngModel)]="formData.phone" required>
+
+
+                    <textarea class="
+                border-none border-gray-600 rounded-[8px]
+                p-3  w-full
+                focus:outline-none focus:ring-0 focus:rign-blue-400
+                focus:shadow-lg shadow-slate-800 shadow-xs
+                hover:shadow-lg
+                bg-gray-300
+                " name="message" placeholder="Message" [(ngModel)]="formData.message"></textarea>
+
+                <div class="flex justify-center items-center">
+
+                    <button class="bg-blue-400 px-10 py-4 rounded-[10px]
+                font-bold
+                hover:shadow-lg ml-auto  shadow-slate-800 shadow-2xs 
+                " type="submit">submit</button>
+                </div>
+                </form>
+            </div>
+
+
+
+        </div>
+    </div>
+
+</section>
+
+
+
+
+
+
+
+
+<!-- <div class="flex items-center justify-center">
+
+            <button class="bg-blue-600
+            text-white
+            shadow-lg shadow-slate-950
+            font-bold text-[20px]
+            border-none rounded-full
+            size-[90px]
+            ">Start</button>
+        </div>
+        <div
+            class="flex items-center justify-center
+            text-6xl text-red-800
+        animate-fade-right lg:animate-fade-right animate-infinite animate-duration-[6000ms] animate-ease-out animate-normal animate-fill-both">
+            <p>
+                &#x2212;
+            </p>
+        </div>
+        <div
+            class="flex justify-center items-center
+        text-red-900
+        text-center
+        animate-fade-right animate-infinite animate-duration-[6000ms] animate-ease-out animate-normal animate-fill-both">
+            <div>
+
+                <h1 class="text-[18px] font-bold">Full-Stack Developer</h1>
+                <h2 class="font-bold text-[15px]">Trekowave Pvt Ltd</h2>
+                <h3 class="font-semibold text-[14px]">July 2023 - july 2024</h3>
+            </div>
+        </div>
+        <div
+            class="text-6xl text-red-800 flex justify-center items-center
+        animate-fade-right animate-infinite animate-duration-[6000ms] animate-ease-out animate-normal animate-fill-both">
+            &#x2212;</div>
+        <div
+            class="text-6xl  text-red-800 flex justify-center items-center
+        animate-fade-right animate-infinite animate-duration-[6000ms] animate-ease-out animate-normal animate-fill-both">
+            &#x27A4;</div>
+        <div class="flex justify-center items-center">
+
+            <button class="bg-blue-600
+                
+                text-white
+                font-bold text-[20px]
+            shadow-lg shadow-slate-950
+    
+            border-none rounded-[8px]
+            px-5 py-5
+            animate-pulse animate-infinite animate-duration-2000 animate-ease-in-out animate-alternate-reverse
+            ">Work In Progress</button>
+        </div> -->
+
+        <!-- group-hover:translate-y-25 group-active:translate-y-25 -->

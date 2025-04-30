@@ -1,0 +1,91 @@
+<!-- <header class="fixed top-0 left-0 w-full shadow-yellow-600 shadow-md z-1000">
+    <nav class="bg-slate-800 p-5 text-gray-100 flex justify-between font-sans text-[18px] pr-10 pl-10">
+        <div class="text-2xl font-semibold">
+            <a class="hover:text-gray-400" href="#home" [class.active]="currentSection === 'karimi'">Karimi</a>
+
+            
+        </div>
+        <div class="flex gap-7">
+
+            <a class="hover:text-gray-400 font-semibold" href="#home" [class.active]="currentSection === 'home'">Home</a>
+            <a class="hover:text-gray-400 font-semibold" href="#about" [class.active]="currentSection === 'about'">About</a>
+            <a class="hover:text-gray-400 font-semibold" href="#skills" [class.active]="currentSection === 'skills'">Skills</a>
+            <a class="hover:text-gray-400 font-semibold" href="#education" [class.active]="currentSection === 'education'">Education</a>
+            <a class="hover:text-gray-400 font-semibold" href="#work" [class.active]="currentSection === 'work'">Work</a>
+            <a class="hover:text-gray-400 font-semibold" href="#experience" [class.active]="currentSection === 'experience'">Experience</a>
+            <a class="hover:text-gray-400 font-semibold" href="#contact" [class.active]="currentSection === 'contact'">Contact</a>
+        </div>
+
+
+    </nav>
+</header> -->
+
+<!-- component -->
+<header class="fixed top-0 left-0 w-full z-1000 shadow-gray-800 shadow-lg">
+
+	<nav class="relative px-5 py-3 flex justify-between items-center bg-white">
+		<a class="text-3xl font-bold leading-none lg:pl-5" href="#home" [class.active]="currentSection === 'karimi'">Shahbaz
+		</a>
+		<div class="lg:hidden">
+			<button class="navbar-burger flex items-center text-blue-600 p-3">
+				<img [src]="'/assets/icons/hamburger.png'" alt="Menu" class="h-5 w-5" />
+			</button>
+		</div>
+		<ul class="hidden absolute top-1/2 left-3/4 transform -translate-y-1/2 -translate-x-1/2 lg:flex lg:mx-auto lg:items-center lg:w-auto lg:space-x-6">
+			<li><a class="text-sm text-gray-400 hover:text-gray-500" href="#home" [class.active]="currentSection === 'home'">Home</a></li>
+			<li><a class="text-sm text-blue-600 font-bold" href="#about" [class.active]="currentSection === 'about'">About</a></li>
+			<li><a class="text-sm text-gray-400 hover:text-gray-500" href="#skills" [class.active]="currentSection === 'skills'">Skills</a></li>
+			<li><a class="text-sm text-gray-400 hover:text-gray-500" href="#education" [class.active]="currentSection === 'education'">Education</a></li>
+			<li><a class="text-sm text-gray-400 hover:text-gray-500" href="#work" [class.active]="currentSection === 'work'">Work</a></li>
+			<li><a class="text-sm text-gray-400 hover:text-gray-500" href="#experience" [class.active]="currentSection === 'experience'">Experience</a></li>
+
+			<li><a class="text-sm text-gray-400 hover:text-gray-500" href="#contact" [class.active]="currentSection === 'contact'">Contact</a></li>
+		</ul>
+	</nav>
+	<div class="navbar-menu relative z-50 hidden">
+		<div class="navbar-backdrop fixed inset-0 bg-gray-800 opacity-25"></div>
+		<nav class="fixed top-0 left-0 bottom-0 flex flex-col w-5/6 max-w-sm py-6 px-6 bg-white border-r overflow-y-auto">
+			<div class="flex items-center mb-8">
+				<a class="mr-auto text-3xl font-bold leading-none" href="#">Shahbaz
+				</a>
+				<button class="navbar-close">
+					<svg class="h-6 w-6 text-gray-400 cursor-pointer hover:text-gray-500" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+						<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"></path>
+					</svg>
+				</button>
+			</div>
+			<div>
+				<ul>
+					<li class="mb-1">
+						<a class="block p-4 text-sm font-semibold text-gray-400 hover:bg-blue-50 hover:text-blue-600 rounded" href="#home" [class.active]="currentSection === 'home'">Home</a>
+					</li>
+					<li class="mb-1">
+						<a class="block p-4 text-sm font-semibold text-gray-400 hover:bg-blue-50 hover:text-blue-600 rounded" href="#about" [class.active]="currentSection === 'about'">About</a>
+					</li>
+					<li class="mb-1">
+						<a class="block p-4 text-sm font-semibold text-gray-400 hover:bg-blue-50 hover:text-blue-600 rounded" href="#skills" [class.active]="currentSection === 'skills'">Skills</a>
+					</li>
+					<li class="mb-1">
+						<a class="block p-4 text-sm font-semibold text-gray-400 hover:bg-blue-50 hover:text-blue-600 rounded" href="#education" [class.active]="currentSection === 'education'">Education</a>
+					</li>
+					<li class="mb-1">
+						<a class="block p-4 text-sm font-semibold text-gray-400 hover:bg-blue-50 hover:text-blue-600 rounded" href="#work" [class.active]="currentSection === 'work'">Work</a>
+					</li>
+                    <li class="mb-1">
+						<a class="block p-4 text-sm font-semibold text-gray-400 hover:bg-blue-50 hover:text-blue-600 rounded" href="#experience" [class.active]="currentSection === 'experience'">Experience</a>
+                    </li>
+                    <li class="mb-1">
+						<a class="block p-4 text-sm font-semibold text-gray-400 hover:bg-blue-50 hover:text-blue-600 rounded" href="#contact" [class.active]="currentSection === 'contact'">Contact</a>
+					</li>
+				</ul>
+			</div>
+			<div class="mt-auto">
+				<p class="my-4 text-xs text-center text-gray-400">
+					<span>&lt;/&gt; with ❤️ by Mohd Shahbaz Ahmed • 2025</span>
+				</p>
+			</div> 
+		</nav>
+	</div>
+
+
+</header>
