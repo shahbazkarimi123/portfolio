@@ -106,8 +106,8 @@ export class DashboardComponent implements AfterViewInit{
   }
   onSubmit(event:NgForm){
     if(this.formData.email !=null && this.formData.phone!=null){
-      emailjs.init('HhGu9HxR8MGzx_kCp');
-      emailjs.send("service_mag1zu8","template_6mfgfoj",{
+      emailjs.init();
+      emailjs.send("","",{
         name: this.formData.name,
         email: this.formData.email,
         message: this.formData.message,
