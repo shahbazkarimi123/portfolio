@@ -38,8 +38,7 @@ export class DashboardComponent implements AfterViewInit{
       canvas.height =300;
     }
     this.ctx = canvas.getContext('2d')!;
-    // this.ctx.shadowColor = '#000';
-    // this.ctx.shadowBlur = 8;
+    
     this.ctx.textBaseline = 'top';
     this.animateTyping();
   }
@@ -69,20 +68,19 @@ export class DashboardComponent implements AfterViewInit{
     this.ctx.fillText(');', 20, 130);
 
     
-    // this.ctx.font = '22px Arial';
-    // this.ctx.fillStyle = '#e0e0e0';
-    // this.ctx.fillText('Creative Technologist | Software Engineer', 50, 110);
+   
 
-    // Draw prefix in dark blue
+  
     this.ctx.font = screenWidth <= 600 ? 'bold 18px monospace' : 'bold 28 px monospace';
     this.ctx.fillStyle = '#D3D9D4';
     this.ctx.fillText(prefix, 20, 180);
 
-    // Draw animated role in dark red
+   
     this.ctx.fillStyle = '#FB8500';
     this.ctx.fillText(textToShow + (this.charIndex < currentRole.length ? '|' : ''), 20 + this.ctx.measureText(prefix).width, 180);
 
     // Typing logic
+    
     if (!this.isDeleting && this.charIndex < currentRole.length) {
       this.charIndex++;
       setTimeout(() => this.animateTyping(), this.typingSpeed);
@@ -126,10 +124,3 @@ export class DashboardComponent implements AfterViewInit{
 }
 
 
-
-// emailjs.send("service_mag1zu8","template_6mfgfoj",{
-//   name: "karimi",
-//   email: "guruprince11@gmail.com",
-//   message: "take message from me",
-//   phone: 988089773,
-//   });
